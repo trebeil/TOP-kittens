@@ -1,0 +1,10 @@
+<% if @kitten.errors.any? %>
+  <div id='error_explanation'>
+    <h2><%= pluralize(@kitten.errors.count, 'error') %> prohibited this object from being saved:</h2>
+    <ul>
+      <% @kitten.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
