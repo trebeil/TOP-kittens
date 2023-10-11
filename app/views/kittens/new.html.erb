@@ -1,13 +1,3 @@
 <h1>New Kitten</h1>
 
-<%= form_with model: @kitten do |form| %>
-  <%= form.label :name, 'Name:' %>
-  <%= form.text_field :name %>
-  <%= form.label :age, 'Age:' %>
-  <%= form.number_field :age, in: 0..100 %>
-  <%= form.label :cuteness, 'Cuteness:' %>
-  <%= form.number_field :cuteness, in: 0..10 %>
-  <%= form.label :softness, 'Softness:' %>
-  <%= form.number_field :softness, in: 0..10 %>
-  <%= form.submit %>
-<% end %>
+<%= render 'kitten_form' %>
