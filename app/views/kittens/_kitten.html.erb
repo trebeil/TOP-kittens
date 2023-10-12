@@ -1,5 +1,6 @@
 <li>
-  <%= link_to "Name: #{kitten.name}, ", kitten_path(kitten.id) %>
-  <%= "Age: #{kitten.age}, Cuteness: #{kitten.cuteness}, Softness: #{kitten.softness} - "%>
-  <%= link_to 'Delete', "/kittens/#{kitten.id}", data: { turbo_method: "delete" } %>
+  <%= "Name: #{kitten.name}, Age: #{kitten.age}, Cuteness: #{kitten.cuteness}, Softness: #{kitten.softness} - "%>
+  <%= link_to "See details", kitten_path(kitten.id) %>
+  <%= " - " %>
+  <%= link_to 'Delete kitten', "/kittens/#{kitten.id}", data: { turbo_method: "delete" } %>
 </li>
