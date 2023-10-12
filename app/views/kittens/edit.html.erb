@@ -2,3 +2,4 @@
 
 <%= render 'errors' %>
 <%= render 'kitten_form' %>
+<%= link_to 'Delete kitten', "/kittens/#{@kitten.id}", data: { turbo_method: "delete" } %>
