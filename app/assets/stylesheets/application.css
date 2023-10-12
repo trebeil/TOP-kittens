@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ .success {
+  color: blue;
+  font-weight: bold;
+ }
+
+ .error {
+  color: red;
+ }
